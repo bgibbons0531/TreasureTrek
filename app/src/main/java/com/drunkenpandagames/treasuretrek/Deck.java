@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Deck {
 
-    Card[] cards = new Card[30];
+    private Card[] cards = new Card[30];
 
     /**
      * Constructor for the Deck object.

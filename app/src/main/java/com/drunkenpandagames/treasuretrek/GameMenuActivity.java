@@ -1,21 +1,34 @@
 package com.drunkenpandagames.treasuretrek;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.View;
 
 public class GameMenuActivity extends AppCompatActivity {
 
     private float x1,x2;
     static final int MIN_DISTANCE = 150;
 
-    CardFragment currentCard = new CardFragment();
+    CardFragment currentCard;
+    Deck deck;
+    Card currCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        currentCard = new CardFragment();
+        deck = new Deck();
+        currCard = deck.getCardByIndex(0);
         setContentView(R.layout.activity_game_menu);
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.fragment_container, currentCard);
+        fragmentTransaction.commit();
+        //currentCard.giveCard(currCard, currentView);
     }
 
     @Override
