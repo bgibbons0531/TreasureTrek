@@ -16,13 +16,15 @@ public class GameMenuActivity extends AppCompatActivity {
     public CardFragment currentCard;
     public Deck deck;
     public Card currCard;
+    public int index;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        index = 0;
         currentCard = new CardFragment();
         deck = new Deck();
-        currCard = deck.getCardByIndex(0);
+        currCard = deck.getCardByIndex(index);
         setContentView(R.layout.activity_game_menu);
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -44,9 +46,9 @@ public class GameMenuActivity extends AppCompatActivity {
                 float change = x2 - x1;
                 if (Math.abs(change) > MIN_DISTANCE) {
                     if (x2 > x1) {
-                        //Right Swipe
+                        index++;
                     } else {
-                        //Left Swipe
+                        index++;
                     }
                 } else {
                     //Tap
