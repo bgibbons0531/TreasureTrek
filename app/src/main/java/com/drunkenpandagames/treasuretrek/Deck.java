@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Deck {
 
-    Card[] cards = new Card[30];
+    private Card[] cards = new Card[30];
 
     /**
      * Constructor for the Deck object.
@@ -20,7 +20,7 @@ public class Deck {
 
     /**
      * Shuffles the deck from the index to the end of the deck
-     * @param start
+     * @param start Start index of the shuffle.
      */
     public void shuffle(int start) {
         Random rand = new Random();
@@ -35,7 +35,7 @@ public class Deck {
     /**
      * Fills the deck with cards.
      * I appologize for the long method for setting the cards.
-     * Would implement a config file to parse in the deck info.
+     * Would implement a config file to parse in the deck info if there was more time.
      */
     private void fillDeck() {
         cards[0] = new Card(0, "First Aid",
@@ -83,56 +83,56 @@ public class Deck {
         cards[14] = new Card(14, "Fork in Road",
                 new Option(14, "Jagged Path", -1, 0, 0),
                 new Option(14, "Dark Path", 0, 0, -1));
-        cards[15] = new Card(15, "",
-                new Option(15, "", 1, -1, 0),
-                new Option(15, "", -1, 1, 0));
-        cards[16] = new Card(16, "",
-                new Option(16, "", 0, -1, 2),
-                new Option(16, "", -1, 2, 0));
-        cards[17] = new Card(17, "",
-                new Option(17, "", 1, 0, -2),
-                new Option(17, "", 0, -2, 1));
-        cards[18] = new Card(18, "",
-                new Option(18, "", 0, 0, 2),
-                new Option(18, "", 2, 0, 0));
-        cards[19] = new Card(19, "",
-                new Option(19, "", 1, 0, 0),
-                new Option(19, "", 0, 1, 0));
-        cards[20] = new Card(20, "",
-                new Option(20, "", 2, 0, 0),
-                new Option(20, "", 0, 2, 0));
-        cards[21] = new Card(21, "",
-                new Option(21, "", 0, -2, 0),
-                new Option(21, "", 0, 0, -2));
-        cards[22] = new Card(22, "",
-                new Option(22, "", 0, 0, -2),
-                new Option(22, "", -2, 0, 0));
-        cards[23] = new Card(23, "",
-                new Option(23, "", 0, -1, -2),
-                new Option(23, "", -1, 0, -2));
-        cards[24] = new Card(24, "",
-                new Option(24, "", 0, 1, 0),
-                new Option(24, "", 0, 0, 1));
-        cards[25] = new Card(25, "",
-                new Option(25, "", 0, 1, 0),
-                new Option(25, "", 0, 0, 1));
-        cards[26] = new Card(26, "",
-                new Option(26, "", 1, -2, 0),
-                new Option(26, "", -2, 0, 1));
-        cards[27] = new Card(27, "",
-                new Option(27, "", -2, -1, 0),
-                new Option(27, "", -2, 0, -1));
-        cards[28] = new Card(28, "",
-                new Option(28, "", 0, 0, 0),
-                new Option(28, "", 0, 0, 0)); // +2/-2 to 1, -1/+1 to 2
-        cards[29] = new Card(29, "",
-                new Option(29, "", 0, 0, 0),
-                new Option(29, "", 0, 0, 0)); // +3 to 1 or +1 to 3
+        cards[15] = new Card(15, "Wrong step",
+                new Option(15, "Find cloth\n+1 Health\n-1 Energy", 1, -1, 0),
+                new Option(15, "Wait it out\n-1 Health\n+1 Energy", -1, 1, 0));
+        cards[16] = new Card(16, "Hostile Adventurer",
+                new Option(16, "Run away\n-1 Energy\n+2 Sanity", 0, -1, 2),
+                new Option(16, "Help her\n-1 Health\n+2 Energy", -1, 2, 0));
+        cards[17] = new Card(17, "Injured Adventurer",
+                new Option(17, "Cannibalize\n+1 Health\n-2 Sanity", 1, 0, -2),
+                new Option(17, "Help him\n-2 Energy\n+1 Sanity", 0, -2, 1));
+        cards[18] = new Card(18, "Dead jaguar",
+                new Option(18, "Bury it\n+2 Sanity", 0, 0, 2),
+                new Option(18, "Cook it\n+2 Health", 2, 0, 0));
+        cards[19] = new Card(19, "Free Time",
+                new Option(19, "Eat food\n+1 Health", 1, 0, 0),
+                new Option(19, "Rest\n+1 Energy", 0, 1, 0));
+        cards[20] = new Card(20, "Extra Free Time",
+                new Option(20, "Feast\n+2 Health", 2, 0, 0),
+                new Option(20, "Hibernate\n+2 Energy", 0, 2, 0));
+        cards[21] = new Card(21, "Haunted Bridge",
+                new Option(21, "The long way\n-2 Energy", 0, -2, 0),
+                new Option(21, "The short way\n-2 Sanity", 0, 0, -2));
+        cards[22] = new Card(22, "Adventurer Under Attack",
+                new Option(22, "Keep walking\n-2 Sanity", 0, 0, -2),
+                new Option(22, "Intervene\n-2 Health", -2, 0, 0));
+        cards[23] = new Card(23, "Giant Spider",
+                new Option(23, "Run Away\n-1 Energy\n-2 Sanity", 0, -1, -2),
+                new Option(23, "Fight\n-1 Health\n-2 Sanity", -1, 0, -2));
+        cards[24] = new Card(24, "Questionable Spring",
+                new Option(24, "Drink from it\n+1 Energy", 0, 1, 0),
+                new Option(24, "Keep walking\n+1 Sanity", 0, 0, 1));
+        cards[25] = new Card(25, "Dual Idols",
+                new Option(25, "Choose Left Idol\n+1 Energy\nThe ground shifts", 0, 1, 0),
+                new Option(25, "Chose Right Idol\n+1 Sanity\nThe ground shifts", 0, 0, 1));
+        cards[26] = new Card(26, "Temple Witch",
+                new Option(26, "Offer soul", 1, 0, -2),
+                new Option(26, "Offer life", -2, 0, 1));
+        cards[27] = new Card(27, "Broken Leg",
+                new Option(27, "Walk it off\n-2 Health\n-1 Energy", -2, -1, 0),
+                new Option(27, "Reset it\n-2 Health\n -1 Sanity", -2, 0, -1));
+        cards[28] = new Card(28, "Nothing here",
+                new Option(28, "Turn left", 0, 0, 0),
+                new Option(28, "Turn right", 0, 0, 0)); // +2/-2 to 1, -1/+1 to 2
+        cards[29] = new Card(29, "Empty room",
+                new Option(29, "Go left", 0, 0, 0),
+                new Option(29, "Go right", 0, 0, 0)); // +3 to 1 or +1 to 3
     }
 
     /**
      * Returns the card at the given index.
-     * @param index
+     * @param index Index of card to get.
      * @return The card at the given index.
      */
     public Card getCardByIndex(int index) {
@@ -141,7 +141,7 @@ public class Deck {
 
     /**
      * Returns the index of the card.
-     * @param id
+     * @param id id of the card to get.
      * @return The index of the card.
      */
     public int getCardIndex(int id) {

@@ -12,10 +12,10 @@ public class Card {
 
     /**
      * Constructor for Card object.
-     * @param id
-     * @param title
-     * @param option1
-     * @param option2
+     * @param id Id of the Card.
+     * @param title Title of the card.
+     * @param option1 Option 1 of the card.
+     * @param option2 Option 2 of the card.
      */
     Card(int id, String title, Option option1, Option option2) {
         this.id = id;
@@ -58,8 +58,8 @@ public class Card {
 
     /**
      * Executes the card's first option.
-     * @param deck
-     * @param player
+     * @param deck Deck the card is in.
+     * @param player Player interacting with card.
      */
     public void swipeLeft(Deck deck, Player player) {
         option1.execute(deck, player);
@@ -67,8 +67,8 @@ public class Card {
 
     /**
      * Executes the card's second option.
-     * @param deck
-     * @param player
+     * @param deck Deck the card is in.
+     * @param player Player interacting with card.
      */
     public void swipeRight(Deck deck, Player player) {
         option2.execute(deck, player);

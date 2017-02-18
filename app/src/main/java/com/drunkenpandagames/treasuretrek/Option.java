@@ -5,14 +5,14 @@ package com.drunkenpandagames.treasuretrek;
  */
 
 public class Option {
-    int cardId;
-    String msg;
-    int health, energy, sanity;
+    private int cardId;
+    private String msg;
+    private int health, energy, sanity;
 
     /**
      * Constructor for an Option object.
-     * @param cardId
-     * @param m msg
+     * @param cardId Id of the card the option is found in.
+     * @param m messsage .
      * @param h health
      * @param e energy
      * @param s sanity
@@ -35,8 +35,8 @@ public class Option {
 
     /**
      * Executes the Option.
-     * @param deck
-     * @param player
+     * @param deck Deck the option is a part of.
+     * @param player Player the option interacts with.
      */
     public void execute(Deck deck, Player player) {
 

@@ -20,9 +20,9 @@ public class Player {
 
     /**
      * Alters the player's vitals.
-     * @param h
-     * @param e
-     * @param s
+     * @param h Change in health of the player.
+     * @param e Change in energy of the player.
+     * @param s Change in sanity of the player.
      */
     public void changeStats(int h, int e, int s) {
         // Cap the values at 7
