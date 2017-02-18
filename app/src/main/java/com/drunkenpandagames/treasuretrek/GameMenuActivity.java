@@ -13,9 +13,9 @@ public class GameMenuActivity extends AppCompatActivity {
     private float x1,x2;
     static final int MIN_DISTANCE = 150;
 
-    CardFragment currentCard;
-    Deck deck;
-    Card currCard;
+    public CardFragment currentCard;
+    public Deck deck;
+    public Card currCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

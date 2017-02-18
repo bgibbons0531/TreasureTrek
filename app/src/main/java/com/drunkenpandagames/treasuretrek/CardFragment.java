@@ -28,6 +28,7 @@ public class CardFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         res = getResources();
+        title = ((GameMenuActivity)getActivity()).currCard.getTitle();
         View v = inflater.inflate(card_fragment, container, false);
         titleText = (TextView)v.findViewById(R.id.title_xml);
         titleText.setText(title);
