@@ -2,6 +2,7 @@ package com.drunkenpandagames.treasuretrek;
 
 import android.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.os.Bundle;
 import android.view.ViewGroup;
