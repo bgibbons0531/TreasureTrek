@@ -1,5 +1,7 @@
 package com.drunkenpandagames.treasuretrek;
 
+import java.util.Random;
+
 /**
  * Created by Brad_Laptop on 2/18/17.
  */
@@ -21,8 +23,12 @@ public class Deck {
      * @param start
      */
     public void shuffle(int start) {
+        Random rand = new Random();
         for (int i=start; i<30; i++) {
-
+            int num = rand.nextInt((29 - start) + 1) + start;
+            Card temp = cards[i];
+            cards[i] = cards[num];
+            cards[num] = temp;
         }
     }
 
