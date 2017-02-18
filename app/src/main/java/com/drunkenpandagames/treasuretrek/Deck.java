@@ -34,6 +34,8 @@ public class Deck {
 
     /**
      * Fills the deck with cards.
+     * I appologize for the long method for setting the cards.
+     * Would implement a config file to parse in the deck info.
      */
     private void fillDeck() {
         cards[0] = new Card(0, "First Aid",

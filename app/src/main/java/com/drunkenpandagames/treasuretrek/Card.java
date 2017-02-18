@@ -24,18 +24,34 @@ public class Card {
         this.option2 = option2;
     }
 
+    /**
+     * Returns the ID of the card.
+     * @return The ID of the card.
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Returns the title of the card.
+     * @return The title of the card.
+     */
     public String getTitle() {
         return title;
     }
 
+    /**
+     * Returns the first option of the card.
+     * @return The first option of the card.
+     */
     public Option getOption1() {
         return option1;
     }
 
+    /**
+     * Returns the second option of the card.
+     * @return The second option of the card.
+     */
     public Option getOption2() {
         return option2;
     }
