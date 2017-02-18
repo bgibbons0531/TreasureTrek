@@ -67,22 +67,22 @@ public class Deck {
                 new Option(8, "Meditate\n+1 Sanity", 0, 0, 1));
         cards[9] = new Card(9, "Look Out!",
                 new Option(9, "Sleep\n+2 Energy", 0, 2, 0),
-                new Option(9, "Keep Watch", 0, 0, 2));
+                new Option(9, "Keep Watch\n+2 Sanity", 0, 0, 2));
         cards[10] = new Card(10, "Stuck Boar",
-                new Option(10, "Save it", -1, 0, 2),
-                new Option(10, "Eat it", 2, 0, -1));
-        cards[11] = new Card(11, "",
-                new Option(11, "", -1, 0, 1),
-                new Option(11, "", 0, 1, -1));
+                new Option(10, "Save it\n-1 Health\n+2 Sanity", -1, 0, 2),
+                new Option(10, "Eat it\n+2 Health\n-1 Sanity", 2, 0, -1));
+        cards[11] = new Card(11, "Eerie Statue",
+                new Option(11, "Climb over rocks\n-1 Health\n+1 Sanity", -1, 0, 1),
+                new Option(11, "Walk past\n+1 Energy\n-1 Sanity", 0, 1, -1));
         cards[12] = new Card(12, "Stuck Rabbit",
-                new Option(12, "Eat it", 1, 0, -1),
-                new Option(12, "Save it", -1, 0, 1));
-        cards[13] = new Card(13, "",
-                new Option(13, "", -1, 1, 0),
-                new Option(13, "", 1, 0, -1));
-        cards[14] = new Card(14, "",
-                new Option(14, "", -1, 0, 0),
-                new Option(14, "", 0, 0, -1));
+                new Option(12, "Eat it\n+1 Health\n-1 Sanity", 1, 0, -1),
+                new Option(12, "Save it\n-1 Health\n+1 Sanity", -1, 0, 1));
+        cards[13] = new Card(13, "Potion Master",
+                new Option(13, "Energy Potion\n-1 Health\n+1 Energy", -1, 1, 0),
+                new Option(13, "Health Potion\n+1 Health\n-1 Sanity", 1, 0, -1));
+        cards[14] = new Card(14, "Fork in Road",
+                new Option(14, "Jagged Path", -1, 0, 0),
+                new Option(14, "Dark Path", 0, 0, -1));
         cards[15] = new Card(15, "",
                 new Option(15, "", 1, -1, 0),
                 new Option(15, "", -1, 1, 0));
