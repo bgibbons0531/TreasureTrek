@@ -10,7 +10,7 @@ public class Option {
     int health, energy, sanity;
 
     /**
-     *
+     * Constructor for an Option object.
      * @param cardId
      * @param m msg
      * @param h health
@@ -26,16 +26,15 @@ public class Option {
     }
 
     /**
-     * Returns the title of the card.
-     * @return The title of the card.
+     * Returns the message of the option.
+     * @return The message of the option.
      */
     public String getMessage() {
         return msg;
     }
 
     /**
-     * Executes the Option. I apologize for the long case statement, would parse in a config file
-     * to load a deck if given more time to develop.
+     * Executes the Option.
      * @param deck
      * @param player
      */
