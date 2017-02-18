@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 public class GameMenuActivity extends AppCompatActivity {
 
+    CardFragment currentCard = new CardFragment();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

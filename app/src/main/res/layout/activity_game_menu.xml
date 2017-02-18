@@ -11,11 +11,16 @@
     android:layout_height="match_parent">
 
     <fragment android:id="@+id/currentCard"
-        android:layout_height="10dp"
-        android:layout_width="10dp"
         android:gravity="center"
         android:name="com.drunkenpandagames.treasuretrek.CardFragment"
-        tools:layout="@layout/card_fragment"/>
+        tools:layout="@layout/card_fragment"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
