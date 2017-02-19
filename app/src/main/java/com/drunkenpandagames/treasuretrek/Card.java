@@ -8,6 +8,7 @@ package com.drunkenpandagames.treasuretrek;
 public class Card {
     private int id;
     private String title;
+    private String path;
     private Option option1;
     private Option option2;
 
@@ -22,6 +23,7 @@ public class Card {
     Card(int id, String title, String path, Option option1, Option option2) {
         this.id = id;
         this.title = title;
+        this.path = path;
         this.option1 = option1;
         this.option2 = option2;
     }
@@ -57,6 +59,12 @@ public class Card {
     public Option getOption2() {
         return option2;
     }
+
+    /**
+     * Returns the path of the card image.
+     * @return The path of the card image.
+     */
+    public String getPath() { return path; }
 
     /**
      * Executes the card's first option.
