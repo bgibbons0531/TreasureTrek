@@ -6,4 +6,6 @@
     <string name="text_begin">Begin!</string>
     <string name="text_help">Help?</string>
     <string name="text_exit">Exit.</string>
+    <string name="text_victory">Victory!!!</string>
+    <string name="text_defeat">Defeat :(</string>
 </resources>

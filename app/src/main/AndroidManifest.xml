@@ -18,6 +18,8 @@
         <activity android:name=".MainMenuActivity" />
         <activity android:name=".HelpMenuActivity" />
         <activity android:name=".GameMenuActivity" />
+        <activity android:name=".VictoryActivity" />
+        <activity android:name=".DefeatActivity"></activity>
     </application>
 
 </manifest>
