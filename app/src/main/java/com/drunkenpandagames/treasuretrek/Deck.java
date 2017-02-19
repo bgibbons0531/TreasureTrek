@@ -63,7 +63,7 @@ public class Deck {
         cards[7] = new Card(7, "Skeleton Ambush",
                 new Option(7, "Fight him<br><br><br>-1 Health<br>-2 Energy", -1, -2, 0),
                 new Option(7, "Escape<br>through<br>crack<br>-2 Energy<br>-1 Sanity", 0, -2, -1));
-        cards[8] = new Card(8, "Rest Area",
+        cards[8] = new Card(8, "Empty Camp",
                 new Option(8, "Gather<br>fruit<br>+1 Health", 1, 0, 0),
                 new Option(8, "Meditate<br><br>+1 Sanity", 0, 0, 1));
         cards[9] = new Card(9, "Look Out!",
