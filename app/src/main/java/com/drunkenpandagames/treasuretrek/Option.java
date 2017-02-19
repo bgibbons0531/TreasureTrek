@@ -34,7 +34,7 @@ public class Option {
         String temp = msg;
         for (int i=0; i<temp.length(); i++) {
             if (temp.charAt(i) == '+' || temp.charAt(i) == '-') {
-                temp = "<b>" + temp.substring(0,i-2) + "</b>" + temp.substring(i-2);
+                temp = "<b>" + temp.substring(0,i-4) + "</b>" + temp.substring(i-4);
                 return temp;
             }
         }
