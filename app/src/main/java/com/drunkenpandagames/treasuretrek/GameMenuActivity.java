@@ -65,11 +65,11 @@ public class GameMenuActivity extends AppCompatActivity {
                             fragmentTransaction.commit();
                             showVitals();
                         } else if (player.isAlive()) { // Game won
-                            Intent intent = new Intent(this, MainMenuActivity.class);
+                            Intent intent = new Intent(this, VictoryActivity.class);
 
                             startActivity(intent);
                         } else { // Game loss
-                            Intent intent = new Intent(this, MainMenuActivity.class);
+                            Intent intent = new Intent(this, DefeatActivity.class);
 
                             startActivity(intent);
                         }
@@ -86,11 +86,11 @@ public class GameMenuActivity extends AppCompatActivity {
                             fragmentTransaction.commit();
                             showVitals();
                         } else if (player.isAlive()) { // Game won
-                            Intent intent = new Intent(this, MainMenuActivity.class);
+                            Intent intent = new Intent(this, VictoryActivity.class);
 
                             startActivity(intent);
                         } else { // Game loss
-                            Intent intent = new Intent(this, MainMenuActivity.class);
+                            Intent intent = new Intent(this, DefeatActivity.class);
 
                             startActivity(intent);
                         }
