@@ -19,6 +19,36 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:id="@+id/title_xml"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:fontFamily="serif-monospace"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxWidth="150dp"
+        android:id="@+id/option1_xml"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="start"
+        android:fontFamily="serif-monospace"
+        android:ellipsize="none"
+        android:maxLines="100"
+        android:scrollHorizontally="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxWidth="150dp"
+        android:id="@+id/option2_xml"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="end"
+        android:fontFamily="serif-monospace"
+        android:ellipsize="none"
+        android:maxLines="100"
+        android:scrollHorizontally="false"/>
 
 </RelativeLayout>
