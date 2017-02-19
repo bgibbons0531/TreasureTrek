@@ -40,7 +40,7 @@ public class Deck {
      */
     private void fillDeck() {
         cards[0] = new Card(0, "First Aid",
-                new Option(0, "Cauterize<br>Wound<br>+1 Health<br>-1 Energy", 1, -1, 0),
+                new Option(0, "Cauterize<br>wound<br>+1 Health<br>-1 Energy", 1, -1, 0),
                 new Option(0, "Let it be<br><br>-1 Energy<br>+1 Sanity", 0, -1, 1));
         cards[1] = new Card(1, "Ghost",
                 new Option(1, "Run around<br>-1 Energy<br>+1 Sanity", 0, -1, 1),
@@ -64,11 +64,11 @@ public class Deck {
                 new Option(7, "Fight him<br><br><br>-1 Health<br>-2 Energy", -1, -2, 0),
                 new Option(7, "Escape<br>through<br>crack<br>-2 Energy<br>-1 Sanity", 0, -2, -1));
         cards[8] = new Card(8, "Rest Area",
-                new Option(8, "Eat<br>+1 Health", 1, 0, 0),
-                new Option(8, "Meditate<br>+1 Sanity", 0, 0, 1));
+                new Option(8, "Gather<br>fruit<br>+1 Health", 1, 0, 0),
+                new Option(8, "Meditate<br><br>+1 Sanity", 0, 0, 1));
         cards[9] = new Card(9, "Look Out!",
                 new Option(9, "Sleep<br>+2 Energy", 0, 2, 0),
-                new Option(9, "Keep Watch<br>+2 Sanity", 0, 0, 2));
+                new Option(9, "Keep watch<br>+2 Sanity", 0, 0, 2));
         cards[10] = new Card(10, "Stuck Boar",
                 new Option(10, "Save it<br>-1 Health<br>+2 Sanity", -1, 0, 2),
                 new Option(10, "Eat it<br>+2 Health<br>-1 Sanity", 2, 0, -1));
@@ -79,12 +79,12 @@ public class Deck {
                 new Option(12, "Eat it<br>+1 Health<br>-1 Sanity", 1, 0, -1),
                 new Option(12, "Save it<br>-1 Health<br>+1 Sanity", -1, 0, 1));
         cards[13] = new Card(13, "Potion Master",
-                new Option(13, "Energy<br>Potion<br>-1 Health<br>+1 Energy", -1, 1, 0),
-                new Option(13, "Health<br>Potion<br>+1 Health<br>-1 Sanity", 1, 0, -1));
-        cards[14] = new Card(14, "Fork in Road",
-                new Option(14, "Jagged<br>Path<br>-1 Health", -1, 0, 0),
-                new Option(14, "Dark Path<br><br>-1 Sanity", 0, 0, -1));
-        cards[15] = new Card(15, "Wrong step",
+                new Option(13, "Energy<br>potion<br>-1 Health<br>+1 Energy", -1, 1, 0),
+                new Option(13, "Health<br>potion<br>+1 Health<br>-1 Sanity", 1, 0, -1));
+        cards[14] = new Card(14, "Fork in the Road",
+                new Option(14, "Jagged<br>path<br>-1 Health", -1, 0, 0),
+                new Option(14, "Spooky<br>path<br>-1 Sanity", 0, 0, -1));
+        cards[15] = new Card(15, "Wrong Step",
                 new Option(15, "Find cloth<br><br>+1 Health<br>-1 Energy", 1, -1, 0),
                 new Option(15, "Wait it<br>out<br>-1 Health<br>+1 Energy", -1, 1, 0));
         cards[16] = new Card(16, "Hostile Adventurer",
@@ -109,14 +109,14 @@ public class Deck {
                 new Option(22, "Keep<br>walking<br>-2 Sanity", 0, 0, -2),
                 new Option(22, "Intervene<br><br>-2 Health", -2, 0, 0));
         cards[23] = new Card(23, "Giant Spider",
-                new Option(23, "Run Away<br>-1 Energy<br>-2 Sanity", 0, -1, -2),
+                new Option(23, "Run away<br>-1 Energy<br>-2 Sanity", 0, -1, -2),
                 new Option(23, "Fight<br>-1 Health<br>-2 Sanity", -1, 0, -2));
         cards[24] = new Card(24, "Questionable Spring",
                 new Option(24, "Drink<br>from it<br>+1 Energy", 0, 1, 0),
                 new Option(24, "Keep<br>walking<br>+1 Sanity", 0, 0, 1));
         cards[25] = new Card(25, "Dual Idols",
-                new Option(25, "Choose <br>Left<br>Idol<br>+1 Energy<br>The ground<br>shifts", 0, 1, 0),
-                new Option(25, "Chose<br>Right<br>Idol<br>+1 Sanity<br>The ground<br>shifts", 0, 0, 1));
+                new Option(25, "Choose<br>left<br>idol<br>+1 Energy<br>The ground<br>shifts", 0, 1, 0),
+                new Option(25, "Choose<br>right<br>idol<br>+1 Sanity<br>The ground<br>shifts", 0, 0, 1));
         cards[26] = new Card(26, "Temple Witch",
                 new Option(26, "Offer soul<br>+1 Health<br>-2 Sanity", 1, 0, -2),
                 new Option(26, "Offer life<br>-2 Health<br>+1 Sanity", -2, 0, 1));
