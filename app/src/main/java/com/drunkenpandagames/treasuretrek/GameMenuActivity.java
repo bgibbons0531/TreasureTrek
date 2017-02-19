@@ -25,12 +25,12 @@ public class GameMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         player = new Player();
-        showVitals();
         index = 0;
         currentCard = new CardFragment();
         deck = new Deck();
         currCard = deck.getCardByIndex(index);
         setContentView(R.layout.activity_game_menu);
+        showVitals();
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fragment_container, currentCard);
