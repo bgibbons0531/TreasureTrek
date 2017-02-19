@@ -38,7 +38,7 @@ public class Option {
                 return temp;
             }
         }
-        return temp;
+        return ("<b>" + temp + "<b>");
     }
 
     /**

@@ -122,7 +122,7 @@ public class Deck {
                 new Option(26, "Offer life<br>-2 Health<br>+1 Sanity", -2, 0, 1));
         cards[27] = new Card(27, "Broken Leg",
                 new Option(27, "Walk it<br>off<br>-2 Health<br>-1 Energy", -2, -1, 0),
-                new Option(27, "Re set it<br><br>-2 Health<br> -1 Sanity", -2, 0, -1));
+                new Option(27, "Reset it<br><br>-2 Health<br> -1 Sanity", -2, 0, -1));
         cards[28] = new Card(28, "Nothing here",
                 new Option(28, "Turn left", 0, 0, 0),
                 new Option(28, "Turn right", 0, 0, 0)); // +2/-2 to 1, -1/+1 to 2
