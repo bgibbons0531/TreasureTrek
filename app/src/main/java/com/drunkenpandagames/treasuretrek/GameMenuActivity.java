@@ -13,6 +13,7 @@ public class GameMenuActivity extends AppCompatActivity {
     private float x1,x2;
     static final int MIN_DISTANCE = 150;
 
+    public Player player;
     public CardFragment currentCard;
     public Deck deck;
     public Card currCard;
@@ -22,6 +23,7 @@ public class GameMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         index = 0;
+        player = new Player();
         currentCard = new CardFragment();
         deck = new Deck();
         currCard = deck.getCardByIndex(index);
@@ -30,12 +32,14 @@ public class GameMenuActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fragment_container, currentCard);
         fragmentTransaction.commit();
-        //currentCard.giveCard(currCard, currentView);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event){
-
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        CardFragment nextCard;
+        Card newCard;
         int action = MotionEventCompat.getActionMasked(event);
         switch (action) {
             case (MotionEvent.ACTION_DOWN):
@@ -46,12 +50,26 @@ public class GameMenuActivity extends AppCompatActivity {
                 float change = x2 - x1;
                 if (Math.abs(change) > MIN_DISTANCE) {
                     if (x2 > x1) {
+                        //Swipe right
                         index++;
+                        currCard.swipeRight(deck, player);
+                        newCard = deck.getCardByIndex(index);
+                        currCard = newCard;
+                        nextCard = new CardFragment();
+                        fragmentTransaction.setCustomAnimations(0, R.animator.slide_out_right);
+                        fragmentTransaction.replace(R.id.fragment_container, nextCard);
+                        fragmentTransaction.commit();
                     } else {
+                        //Swipe Left
                         index++;
+                        currCard.swipeLeft(deck, player);
+                        newCard = deck.getCardByIndex(index);
+                        currCard = newCard;
+                        nextCard = new CardFragment();
+                        fragmentTransaction.setCustomAnimations(0, R.animator.slide_out_left);
+                        fragmentTransaction.replace(R.id.fragment_container, nextCard);
+                        fragmentTransaction.commit();
                     }
-                } else {
-                    //Tap
                 }
                 break;
         }

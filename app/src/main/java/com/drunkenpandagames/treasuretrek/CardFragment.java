@@ -2,6 +2,7 @@ package com.drunkenpandagames.treasuretrek;
 
 import android.app.Fragment;
 import android.content.res.Resources;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -41,20 +42,9 @@ public class CardFragment extends Fragment {
         titleText = (TextView)v.findViewById(R.id.title_xml);
         option1Text = (TextView)v.findViewById(R.id.option1_xml);
         option2Text = (TextView)v.findViewById(R.id.option2_xml);
-        titleText.setText(title);
-        option1Text.setText(option1String);
-        option2Text.setText(option2String);
+        titleText.setText(Html.fromHtml(title));
+        option1Text.setText(Html.fromHtml(option1String));
+        option2Text.setText(Html.fromHtml(option2String));
         return v;
-    }
-
-    public void giveCard(Card p_currCard, View p_currView){
-        currentCard = p_currCard;
-        title = p_currCard.getTitle();
-        op1 = p_currCard.getOption1();
-        op2 = p_currCard.getOption2();
-        //titleText = (TextView)p_currView.findViewById(R.id.title_xml);
-        //TextView op1Text = (TextView)p_currView.findViewById(R.id.option1);
-        //TextView op2Text = (TextView)p_currView.findViewById(R.id.option2);
-        titleText.setText(title);
     }
 }
