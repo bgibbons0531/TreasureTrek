@@ -17,7 +17,6 @@ import static com.drunkenpandagames.treasuretrek.R.layout.card_fragment;
  */
 public class CardFragment extends Fragment {
 
-    Card currentCard;
     String title;
     Option op1;
     Option op2;

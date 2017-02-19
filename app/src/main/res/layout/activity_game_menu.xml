@@ -17,6 +17,41 @@
         android:scaleType="fitXY"
         tools:ignore="ContentDescription"/>
 
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="44sp"
+        android:textColor="#ffff00"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/energy_view" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="44sp"
+        android:gravity="start"
+        android:textColor="#ff0000"
+        android:id="@+id/health_view" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="44sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:gravity="end"
+        android:id="@+id/sanity_view"
+        android:layout_toEndOf="@+id/health_view" />
+
     <fragment android:id="@+id/currentCard"
         android:gravity="center"
         android:name="com.drunkenpandagames.treasuretrek.CardFragment"
@@ -41,30 +76,6 @@
 
         </RelativeLayout>
 
-    <TextView
-        android:text=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/fragment_container"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="27dp"
-        android:id="@+id/energy_view" />
 
-    <TextView
-        android:text=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/energy_view"
-        android:layout_alignStart="@+id/currentCard"
-        android:id="@+id/health_view" />
-
-    <TextView
-        android:text=""
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/sanity_view"
-        android:layout_alignBaseline="@+id/energy_view"
-        android:layout_alignBottom="@+id/energy_view"
-        android:layout_alignEnd="@+id/currentCard" />
 
 </RelativeLayout>
