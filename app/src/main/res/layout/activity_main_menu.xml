@@ -14,22 +14,26 @@
         android:scaleType="fitXY"
         tools:ignore="ContentDescription"/>
 
-    <Button
-        android:text="@string/text_begin"
+    <ImageButton
+        android:src="@mipmap/start"
+        android:scaleType="fitXY"
         android:onClick="onClickBegin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="512px"
+        android:layout_height="256px"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="160dp"
-        android:id="@+id/begin" />
+        android:id="@+id/begin"
+        tools:ignore="ContentDescription" />
 
-    <Button
-        android:text="@string/text_help"
+    <ImageButton
+        android:src="@mipmap/help"
+        android:scaleType="fitXY"
         android:onClick="onClickHelp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="512px"
+        android:layout_height="256px"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="240dp"
-        android:id="@+id/help" />
+        android:layout_marginTop="360dp"
+        android:id="@+id/help"
+        tools:ignore="ContentDescription" />
 
 </RelativeLayout>
