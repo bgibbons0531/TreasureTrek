@@ -60,8 +60,9 @@ public class GameMenuActivity extends AppCompatActivity {
                             newCard = deck.getCardByIndex(index);
                             currCard = newCard;
                             nextCard = new CardFragment();
-                            fragmentTransaction.setCustomAnimations(0, R.animator.slide_out_right);
-                            fragmentTransaction.replace(R.id.fragment_container, nextCard);
+                            fragmentTransaction.setCustomAnimations(0, R.animator.slide_out_right, 0, R.animator.slide_out_right);
+                            fragmentTransaction.remove(currentCard);
+                            fragmentTransaction.add(R.id.fragment_container, nextCard);
                             fragmentTransaction.commit();
                             showVitals();
                         } else if (player.isAlive()) { // Game won
@@ -81,7 +82,7 @@ public class GameMenuActivity extends AppCompatActivity {
                             newCard = deck.getCardByIndex(index);
                             currCard = newCard;
                             nextCard = new CardFragment();
-                            fragmentTransaction.setCustomAnimations(0, R.animator.slide_out_left);
+                            fragmentTransaction.setCustomAnimations(0, R.animator.slide_out_left, 0, R.animator.slide_out_left);
                             fragmentTransaction.replace(R.id.fragment_container, nextCard);
                             fragmentTransaction.commit();
                             showVitals();
