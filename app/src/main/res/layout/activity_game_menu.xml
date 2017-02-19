@@ -41,4 +41,30 @@
 
         </RelativeLayout>
 
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fragment_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:id="@+id/energy_view" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/energy_view"
+        android:layout_alignStart="@+id/currentCard"
+        android:id="@+id/health_view" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sanity_view"
+        android:layout_alignBaseline="@+id/energy_view"
+        android:layout_alignBottom="@+id/energy_view"
+        android:layout_alignEnd="@+id/currentCard" />
+
 </RelativeLayout>

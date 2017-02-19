@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.TextView;
 
 public class GameMenuActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class GameMenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        showVitals();
         index = 0;
         player = new Player();
         currentCard = new CardFragment();
@@ -61,6 +63,7 @@ public class GameMenuActivity extends AppCompatActivity {
                             fragmentTransaction.setCustomAnimations(0, R.animator.slide_out_right);
                             fragmentTransaction.replace(R.id.fragment_container, nextCard);
                             fragmentTransaction.commit();
+                            showVitals();
                         } else if (player.isAlive()) { // Game won
                             Intent intent = new Intent(this, MainMenuActivity.class);
 
@@ -81,6 +84,7 @@ public class GameMenuActivity extends AppCompatActivity {
                             fragmentTransaction.setCustomAnimations(0, R.animator.slide_out_left);
                             fragmentTransaction.replace(R.id.fragment_container, nextCard);
                             fragmentTransaction.commit();
+                            showVitals();
                         } else if (player.isAlive()) { // Game won
                             Intent intent = new Intent(this, MainMenuActivity.class);
 
@@ -95,5 +99,19 @@ public class GameMenuActivity extends AppCompatActivity {
                 break;
         }
         return true;
+    }
+
+    private void showVitals() {
+        TextView h_v = (TextView)findViewById(R.id.health_view);
+        TextView e_v = (TextView)findViewById(R.id.energy_view);
+        TextView s_v = (TextView)findViewById(R.id.sanity_view);
+
+        String h = "H: " + player.getHealth();
+        String e = "E: " + player.getEnergy();
+        String s = "S: " + player.getSanity();
+
+        h_v.setText(h);
+        e_v.setText(e);
+        s_v.setText(s);
     }
 }
