@@ -28,8 +28,8 @@ public class Player {
     public void changeStats(int h, int e, int s) {
         // Cap the values at 7
         health = (health + h <= 7) ? health + h : 7;
-        energy = (energy + h <= 7) ? energy + h : 7;
-        sanity = (sanity + h <= 7) ? sanity + h : 7;
+        energy = (energy + e <= 7) ? energy + e : 7;
+        sanity = (sanity + s <= 7) ? sanity + s : 7;
     }
 
     /**
