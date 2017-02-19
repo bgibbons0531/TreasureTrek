@@ -13,7 +13,7 @@ public class Option {
     /**
      * Constructor for an Option object.
      * @param cardId Id of the card the option is found in.
-     * @param m messsage .
+     * @param m message .
      * @param h health
      * @param e energy
      * @param s sanity
@@ -31,7 +31,14 @@ public class Option {
      * @return The message of the option.
      */
     public String getMessage() {
-        return msg;
+        String temp = msg;
+        for (int i=0; i<temp.length(); i++) {
+            if (temp.charAt(i) == '+' || temp.charAt(i) == '-') {
+                temp = "<b>" + temp.substring(0,i-2) + "</b>" + temp.substring(i-2);
+                return temp;
+            }
+        }
+        return temp;
     }
 
     /**

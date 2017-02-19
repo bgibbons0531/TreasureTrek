@@ -38,7 +38,7 @@ public class Card {
      * @return The title of the card.
      */
     public String getTitle() {
-        return title;
+        return "<b>" + title + "</b>";
     }
 
     /**

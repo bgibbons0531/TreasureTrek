@@ -115,8 +115,8 @@ public class Deck {
                 new Option(24, "Drink\nfrom it\n+1 Energy", 0, 1, 0),
                 new Option(24, "Keep\nwalking\n+1 Sanity", 0, 0, 1));
         cards[25] = new Card(25, "Dual Idols",
-                new Option(25, "Choose Left\nIdol\n+1 Energy\nThe ground shifts", 0, 1, 0),
-                new Option(25, "Chose Right\nIdol\n+1 Sanity\nThe ground shifts", 0, 0, 1));
+                new Option(25, "Choose \nLeft\nIdol\n+1 Energy\nThe ground\nshifts", 0, 1, 0),
+                new Option(25, "Chose\nRight\nIdol\n+1 Sanity\nThe ground\nshifts", 0, 0, 1));
         cards[26] = new Card(26, "Temple Witch",
                 new Option(26, "Offer soul\n+1 Health\n-2 Sanity", 1, 0, -2),
                 new Option(26, "Offer life\n-2 Health\n+1 Sanity", -2, 0, 1));
