@@ -41,13 +41,13 @@ public class Deck {
     private void fillDeck() {
         cards[0] = new Card(0, "First Aid",
                 new Option(0, "Cauterize<br>Wound<br>+1 Health<br>-1 Energy", 1, -1, 0),
-                new Option(0, "Let it be<br>-1 Energy<br>+1 Sanity", 0, -1, 1));
+                new Option(0, "Let it be<br><br>-1 Energy<br>+1 Sanity", 0, -1, 1));
         cards[1] = new Card(1, "Ghost",
                 new Option(1, "Run around<br>-1 Energy<br>+1 Sanity", 0, -1, 1),
                 new Option(1, "Run past<br>+1 Energy<br>-1 Sanity", 0, 1, -1));
         cards[2] = new Card(2, "Slime on Head",
                 new Option(2, "Rip it<br>off<br>-1 Energy", 0, -1, 0),
-                new Option(2, "Leave it<br>-1 Sanity", 0, 0, -1));
+                new Option(2, "Leave it<br><br>-1 Sanity", 0, 0, -1));
         cards[3] = new Card(3, "Bear Trap",
                 new Option(3, "Pull leg<br>out<br>-1 Health", -1, 0, 0),
                 new Option(3, "Pry open<br>trap<br>-1 Energy", 0, -1, 0));
@@ -59,9 +59,9 @@ public class Deck {
                 new Option(5, "Drink gross<br>cure<br>+1 Energy<br>-2 Sanity", 0, 1, -2));
         cards[6] = new Card(6, "Bee Hive",
                 new Option(6, "Go under<br>-2 Health", -2, 0, 0),
-                new Option(6, "Go around<br> -2 Energy", 0, -2, 0));
+                new Option(6, "Go around<br>-2 Energy", 0, -2, 0));
         cards[7] = new Card(7, "Skeleton Ambush",
-                new Option(7, "Fight him<br>-1 Health<br>-2 Energy", -1, -2, 0),
+                new Option(7, "Fight him<br><br><br>-1 Health<br>-2 Energy", -1, -2, 0),
                 new Option(7, "Escape<br>through<br>crack<br>-2 Energy<br>-1 Sanity", 0, -2, -1));
         cards[8] = new Card(8, "Rest Area",
                 new Option(8, "Eat<br>+1 Health", 1, 0, 0),
@@ -74,7 +74,7 @@ public class Deck {
                 new Option(10, "Eat it<br>+2 Health<br>-1 Sanity", 2, 0, -1));
         cards[11] = new Card(11, "Eerie Statue",
                 new Option(11, "Climb over<br>rocks<br>-1 Health<br>+1 Sanity", -1, 0, 1),
-                new Option(11, "Walk past<br>+1 Energy<br>-1 Sanity", 0, 1, -1));
+                new Option(11, "Walk past<br><br>+1 Energy<br>-1 Sanity", 0, 1, -1));
         cards[12] = new Card(12, "Stuck Rabbit",
                 new Option(12, "Eat it<br>+1 Health<br>-1 Sanity", 1, 0, -1),
                 new Option(12, "Save it<br>-1 Health<br>+1 Sanity", -1, 0, 1));
@@ -83,9 +83,9 @@ public class Deck {
                 new Option(13, "Health<br>Potion<br>+1 Health<br>-1 Sanity", 1, 0, -1));
         cards[14] = new Card(14, "Fork in Road",
                 new Option(14, "Jagged<br>Path<br>-1 Health", -1, 0, 0),
-                new Option(14, "Dark Path<br>-1 Sanity", 0, 0, -1));
+                new Option(14, "Dark Path<br><br>-1 Sanity", 0, 0, -1));
         cards[15] = new Card(15, "Wrong step",
-                new Option(15, "Find cloth<br>+1 Health<br>-1 Energy", 1, -1, 0),
+                new Option(15, "Find cloth<br><br>+1 Health<br>-1 Energy", 1, -1, 0),
                 new Option(15, "Wait it<br>out<br>-1 Health<br>+1 Energy", -1, 1, 0));
         cards[16] = new Card(16, "Hostile Adventurer",
                 new Option(16, "Run away<br>-1 Energy<br>+2 Sanity", 0, -1, 2),
@@ -107,7 +107,7 @@ public class Deck {
                 new Option(21, "The short<br>way<br>-2 Sanity", 0, 0, -2));
         cards[22] = new Card(22, "Adventurer Under Attack",
                 new Option(22, "Keep<br>walking<br>-2 Sanity", 0, 0, -2),
-                new Option(22, "Intervene<br>-2 Health", -2, 0, 0));
+                new Option(22, "Intervene<br><br>-2 Health", -2, 0, 0));
         cards[23] = new Card(23, "Giant Spider",
                 new Option(23, "Run Away<br>-1 Energy<br>-2 Sanity", 0, -1, -2),
                 new Option(23, "Fight<br>-1 Health<br>-2 Sanity", -1, 0, -2));
@@ -122,7 +122,7 @@ public class Deck {
                 new Option(26, "Offer life<br>-2 Health<br>+1 Sanity", -2, 0, 1));
         cards[27] = new Card(27, "Broken Leg",
                 new Option(27, "Walk it<br>off<br>-2 Health<br>-1 Energy", -2, -1, 0),
-                new Option(27, "Reset it<br>-2 Health<br> -1 Sanity", -2, 0, -1));
+                new Option(27, "Re set it<br><br>-2 Health<br> -1 Sanity", -2, 0, -1));
         cards[28] = new Card(28, "Nothing here",
                 new Option(28, "Turn left", 0, 0, 0),
                 new Option(28, "Turn right", 0, 0, 0)); // +2/-2 to 1, -1/+1 to 2
