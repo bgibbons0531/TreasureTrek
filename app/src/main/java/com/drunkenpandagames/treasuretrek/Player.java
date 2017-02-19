@@ -33,6 +33,16 @@ public class Player {
     }
 
     /**
+     * Checks whether or not the player is still alive.
+     * @return A boolean on if the player is still alive or not.
+     */
+    public boolean isAlive() {
+        boolean alive = true;
+        if (health < 1 || energy < 1 || sanity < 1) alive = false;
+        return alive;
+    }
+
+    /**
      * Returns the player's health.
      * @return The player's health.
      */
