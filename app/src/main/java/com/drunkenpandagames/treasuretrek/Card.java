@@ -15,10 +15,11 @@ public class Card {
      * Constructor for Card object.
      * @param id Id of the Card.
      * @param title Title of the card.
+     * @param path Path to the image for the card.
      * @param option1 Option 1 of the card.
      * @param option2 Option 2 of the card.
      */
-    Card(int id, String title, Option option1, Option option2) {
+    Card(int id, String title, String path, Option option1, Option option2) {
         this.id = id;
         this.title = title;
         this.option1 = option1;
