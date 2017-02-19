@@ -35,34 +35,34 @@ public class Deck {
 
     /**
      * Fills the deck with cards.
-     * I appologize for the long method for setting the cards.
+     * I apologize for the long method for setting the cards.
      * Would implement a config file to parse in the deck info if there was more time.
      */
     private void fillDeck() {
         cards[0] = new Card(0, "First Aid",
-                new Option(0, "Cauterize Wound", 1, -1, 0),
-                new Option(0, "Let it be", 0, -1, 1));
+                new Option(0, "Cauterize\nWound\n+1 Health\n-1 Energy", 1, -1, 0),
+                new Option(0, "Let it be\n-1 Energy\n+1 Sanity", 0, -1, 1));
         cards[1] = new Card(1, "Ghost",
                 new Option(1, "Run around\n-1 Energy\n+1 Sanity", 0, -1, 1),
-                new Option(1, "Run through\n+1 Energy\n-1 Sanity", 0, 1, -1));
+                new Option(1, "Run past\n+1 Energy\n-1 Sanity", 0, 1, -1));
         cards[2] = new Card(2, "Slime on Head",
-                new Option(2, "Rip it off\n-1 Energy", 0, -1, 0),
+                new Option(2, "Rip it\noff\n-1 Energy", 0, -1, 0),
                 new Option(2, "Leave it\n-1 Sanity", 0, 0, -1));
         cards[3] = new Card(3, "Bear Trap",
-                new Option(3, "Pull leg out\n-1 Health", -1, 0, 0),
-                new Option(3, "Pry open trap\n-1 Energy", 0, -1, 0));
+                new Option(3, "Pull leg\nout\n-1 Health", -1, 0, 0),
+                new Option(3, "Pry open\ntrap\n-1 Energy", 0, -1, 0));
         cards[4] = new Card(4, "Monkey Steals Map",
-                new Option(4, "Hunt him down\n+2 health\n-1 Energy", 2, -1, 0),
-                new Option(4, "Let him go\n+2 Energy\n-1 Sanity", 0, 2, -1));
+                new Option(4, "Hunt him\ndown\n+2 health\n-1 Energy", 2, -1, 0),
+                new Option(4, "Let him\ngo\n+2 Energy\n-1 Sanity", 0, 2, -1));
         cards[5] = new Card(5, "Poison",
-                new Option(5, "Let body rest\n-2 Health\n+1 Energy", -2, 1, 0),
-                new Option(5, "Drink gross cure\n+1 Energy\n-2 Sanity", 0, 1, -2));
+                new Option(5, "Let body\nrest\n-2 Health\n+1 Energy", -2, 1, 0),
+                new Option(5, "Drink gross\ncure\n+1 Energy\n-2 Sanity", 0, 1, -2));
         cards[6] = new Card(6, "Bee Hive",
-                new Option(6, "Go underneath\n-2 Health", -2, 0, 0),
+                new Option(6, "Go under\n-2 Health", -2, 0, 0),
                 new Option(6, "Go around\n -2 Energy", 0, -2, 0));
         cards[7] = new Card(7, "Skeleton Ambush",
                 new Option(7, "Fight him\n-1 Health\n-2 Energy", -1, -2, 0),
-                new Option(7, "Escape through crack\n-2 Energy\n-1 Sanity", 0, -2, -1));
+                new Option(7, "Escape\nthrough\ncrack\n-2 Energy\n-1 Sanity", 0, -2, -1));
         cards[8] = new Card(8, "Rest Area",
                 new Option(8, "Eat\n+1 Health", 1, 0, 0),
                 new Option(8, "Meditate\n+1 Sanity", 0, 0, 1));
@@ -73,20 +73,20 @@ public class Deck {
                 new Option(10, "Save it\n-1 Health\n+2 Sanity", -1, 0, 2),
                 new Option(10, "Eat it\n+2 Health\n-1 Sanity", 2, 0, -1));
         cards[11] = new Card(11, "Eerie Statue",
-                new Option(11, "Climb over rocks\n-1 Health\n+1 Sanity", -1, 0, 1),
+                new Option(11, "Climb over\nrocks\n-1 Health\n+1 Sanity", -1, 0, 1),
                 new Option(11, "Walk past\n+1 Energy\n-1 Sanity", 0, 1, -1));
         cards[12] = new Card(12, "Stuck Rabbit",
                 new Option(12, "Eat it\n+1 Health\n-1 Sanity", 1, 0, -1),
                 new Option(12, "Save it\n-1 Health\n+1 Sanity", -1, 0, 1));
         cards[13] = new Card(13, "Potion Master",
-                new Option(13, "Energy Potion\n-1 Health\n+1 Energy", -1, 1, 0),
-                new Option(13, "Health Potion\n+1 Health\n-1 Sanity", 1, 0, -1));
+                new Option(13, "Energy\nPotion\n-1 Health\n+1 Energy", -1, 1, 0),
+                new Option(13, "Health\nPotion\n+1 Health\n-1 Sanity", 1, 0, -1));
         cards[14] = new Card(14, "Fork in Road",
-                new Option(14, "Jagged Path", -1, 0, 0),
-                new Option(14, "Dark Path", 0, 0, -1));
+                new Option(14, "Jagged\nPath\n-1 Health", -1, 0, 0),
+                new Option(14, "Dark Path\n-1 Sanity", 0, 0, -1));
         cards[15] = new Card(15, "Wrong step",
                 new Option(15, "Find cloth\n+1 Health\n-1 Energy", 1, -1, 0),
-                new Option(15, "Wait it out\n-1 Health\n+1 Energy", -1, 1, 0));
+                new Option(15, "Wait it\nout\n-1 Health\n+1 Energy", -1, 1, 0));
         cards[16] = new Card(16, "Hostile Adventurer",
                 new Option(16, "Run away\n-1 Energy\n+2 Sanity", 0, -1, 2),
                 new Option(16, "Help her\n-1 Health\n+2 Energy", -1, 2, 0));
@@ -103,10 +103,10 @@ public class Deck {
                 new Option(20, "Feast\n+2 Health", 2, 0, 0),
                 new Option(20, "Hibernate\n+2 Energy", 0, 2, 0));
         cards[21] = new Card(21, "Haunted Bridge",
-                new Option(21, "The long way\n-2 Energy", 0, -2, 0),
-                new Option(21, "The short way\n-2 Sanity", 0, 0, -2));
+                new Option(21, "The long\nway\n-2 Energy", 0, -2, 0),
+                new Option(21, "The short\nway\n-2 Sanity", 0, 0, -2));
         cards[22] = new Card(22, "Adventurer Under Attack",
-                new Option(22, "Keep walking\n-2 Sanity", 0, 0, -2),
+                new Option(22, "Keep\nwalking\n-2 Sanity", 0, 0, -2),
                 new Option(22, "Intervene\n-2 Health", -2, 0, 0));
         cards[23] = new Card(23, "Giant Spider",
                 new Option(23, "Run Away\n-1 Energy\n-2 Sanity", 0, -1, -2),
@@ -115,13 +115,13 @@ public class Deck {
                 new Option(24, "Drink from it\n+1 Energy", 0, 1, 0),
                 new Option(24, "Keep walking\n+1 Sanity", 0, 0, 1));
         cards[25] = new Card(25, "Dual Idols",
-                new Option(25, "Choose Left Idol\n+1 Energy\nThe ground shifts", 0, 1, 0),
-                new Option(25, "Chose Right Idol\n+1 Sanity\nThe ground shifts", 0, 0, 1));
+                new Option(25, "Choose Left\nIdol\n+1 Energy\nThe ground shifts", 0, 1, 0),
+                new Option(25, "Chose Right\nIdol\n+1 Sanity\nThe ground shifts", 0, 0, 1));
         cards[26] = new Card(26, "Temple Witch",
-                new Option(26, "Offer soul", 1, 0, -2),
-                new Option(26, "Offer life", -2, 0, 1));
+                new Option(26, "Offer soul\n+1 Health\n-2 Sanity", 1, 0, -2),
+                new Option(26, "Offer life\n-2 Health\n+1 Sanity", -2, 0, 1));
         cards[27] = new Card(27, "Broken Leg",
-                new Option(27, "Walk it off\n-2 Health\n-1 Energy", -2, -1, 0),
+                new Option(27, "Walk it\noff\n-2 Health\n-1 Energy", -2, -1, 0),
                 new Option(27, "Reset it\n-2 Health\n -1 Sanity", -2, 0, -1));
         cards[28] = new Card(28, "Nothing here",
                 new Option(28, "Turn left", 0, 0, 0),
