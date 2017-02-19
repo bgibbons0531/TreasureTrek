@@ -24,9 +24,9 @@ public class GameMenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        player = new Player();
         showVitals();
         index = 0;
-        player = new Player();
         currentCard = new CardFragment();
         deck = new Deck();
         currCard = deck.getCardByIndex(index);
