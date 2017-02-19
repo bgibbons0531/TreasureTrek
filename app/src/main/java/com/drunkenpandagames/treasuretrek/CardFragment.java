@@ -1,13 +1,16 @@
 package com.drunkenpandagames.treasuretrek;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.content.res.Resources;
+import android.provider.ContactsContract;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.os.Bundle;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import static com.drunkenpandagames.treasuretrek.R.layout.card_fragment;
@@ -44,6 +47,11 @@ public class CardFragment extends Fragment {
         titleText.setText(Html.fromHtml(title));
         option1Text.setText(Html.fromHtml(option1String));
         option2Text.setText(Html.fromHtml(option2String));
+
+        ImageView imageView = (ImageView)v.findViewById(R.id.card_image);
+        Context context = imageView.getContext();
+        int id = context.getResources().getIdentifier(((GameMenuActivity)getActivity()).currCard.getPath(), "mipmap", context.getPackageName());
+        imageView.setImageResource(id);
         return v;
     }
 }

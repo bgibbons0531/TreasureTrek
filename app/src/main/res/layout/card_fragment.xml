@@ -16,6 +16,17 @@
         android:id="@+id/imageView3"
         android:scaleType="fitXY" />
 
+    <ImageView
+        android:layout_width="512px"
+        android:layout_height="512px"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        tools:ignore="ContentDescription"
+        android:src="@mipmap/card"
+        android:id="@+id/card_image"
+        android:scaleType="fitXY" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
